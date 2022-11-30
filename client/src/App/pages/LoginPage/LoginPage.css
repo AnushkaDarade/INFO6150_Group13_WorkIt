@@ -1,0 +1,41 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 50%;
+  float: center;
+}
+
+
+.login
+{
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}  
+
+.email
+{
+
+
+  float:left;
+
+
+
+}
+
+
+.password
+{
+
+  float:left;
+}
+
+
+.inputs
+{
+display: block;
+
+
+}
