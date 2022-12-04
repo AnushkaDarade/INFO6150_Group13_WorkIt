@@ -10,7 +10,7 @@ function RegisterScreen() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:9002/users/create", {
+      let res = await fetch("http://localhost:9002/user/create", {
         method: "POST",
         body: JSON.stringify({
           name: name,

@@ -12,9 +12,8 @@ function Navbar() {
                     <Link to='/' className="nav-item nav-link active">Login</Link>
                     <Link to='/register' className="nav-item nav-link active">Register</Link>
                     <Link to='/about' className="nav-item nav-link active">About</Link>
-                    <Link to='/home' className="nav-item nav-link active">Home</Link>
                     <Link to='/contact' className="nav-item nav-link active">Contact</Link>
-                    <Link to='/jobs' className="nav-item nav-link active">Jobs</Link>
+                   
                 </div>
             </div>
         </nav>
