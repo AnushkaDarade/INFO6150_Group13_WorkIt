@@ -7,7 +7,7 @@ const { errorHandler, notFound } = require('./middlewares/errorMiddleware');
 const { events } = require('./models/eventModel');
 const url = 'mongodb+srv://userdb:9DwLCcgLaR5oAosK@users.ile35kw.mongodb.net/?retryWrites=true&w=majority';
 const eventRoutes = require('./routes/eventRoutes');
-
+const todoRoutes = require('./routes/todoRoutes');
 
 
 const app = express();
@@ -27,6 +27,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use('/user',userRoutes);
 app.use('/event',eventRoutes);
+app.use('/todo',todoRoutes);
 
 
 app.use(notFound);
