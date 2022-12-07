@@ -1,0 +1,40 @@
+.btn-outline-primary {
+    color: #fff;
+    background-color: #324049;
+}
+
+.bck-image {
+    background-image: url("./20220224-barnimages-1.jpg");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size:cover;
+    position:relative;
+    width: auto;
+    height: auto;
+}
+
+.center-text {
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+.text {
+    text-align: center;
+    padding: 0px 50px 20px 50px;
+    font-style: normal;   
+}
+
+#my_form {
+    font-weight: bold;
+}
+
+.contact-container {
+    /* remember to set a width */
+    padding: 10px;
+    margin: 0px 300px;
+    z-index: 2;
+    background: transparent;
+    width: auto;
+}
