@@ -7,7 +7,7 @@ function footer() {
     return (
         <>
            
-            <h5 className="text-center copyright"> All rights reserved © 2022. <i className=""></i> By Travelling Spoon   
+            <h5 className="text-center copyright"> All rights reserved © 2022. <i className=""></i> By WorkIt   
     
 </h5>
             

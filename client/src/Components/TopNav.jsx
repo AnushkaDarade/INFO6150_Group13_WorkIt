@@ -15,7 +15,7 @@ const logout = () => {
 const TopNav = () => {
   return (
     <Navbar className='navbar-main sticky-top' bg="light" expand="lg">
-       <Navbar.Brand className='navbar-title' href='/'>&nbsp; Travelling-Spoon</Navbar.Brand>
+       <Navbar.Brand className='navbar-title' href='/'>&nbsp; Work It</Navbar.Brand>
        
 					{/* <Navbar.Brand href="#">Some Title</Navbar.Brand> */}
 					<Navbar.Toggle style={{marginRight:'20px'}} aria-controls="navbar-bar-bar" className="nav-toggle" />
@@ -28,13 +28,13 @@ const TopNav = () => {
 					  >
 					    <Nav.Link activeClassName="active" exact as={NavLink} to='/' className='navbar-text' href="#home">HOME</Nav.Link>
 
-              <Nav.Link activeClassName="active" as={NavLink} to='/food' className='navbar-text' href="#food">FOOD</Nav.Link>
-					    <Nav.Link activeClassName="active" as={NavLink} to='/travel' className='navbar-text' href="#travel">TRAVEL</Nav.Link>
-              <Nav.Link activeClassName="active" as={NavLink} to='/blog' className='navbar-text' href="#blog">REVIEWS</Nav.Link>
+              <Nav.Link activeClassName="active" as={NavLink} to='/food' className='navbar-text' href="#food">SELFCARE</Nav.Link>
+					    {/* <Nav.Link activeClassName="active" as={NavLink} to='/travel' className='navbar-text' href="#travel">TRAVEL</Nav.Link> */}
+              <Nav.Link activeClassName="active" as={NavLink} to='/blog' className='navbar-text' href="#blog">BLOGS</Nav.Link>
 						{
 							localStorage.getItem('user') === null
-							? <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs" disabled>FEEDBACK</Nav.Link>
-							: <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">FEEDBACK</Nav.Link>
+							? <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs" disabled>MY JOURNAL</Nav.Link>
+							: <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">MY JOURNAL</Nav.Link>
 
 						}
               <Nav.Link activeClassName="active" exact as={NavLink} to='/about' className='navbar-text' href="#about">ABOUT</Nav.Link>

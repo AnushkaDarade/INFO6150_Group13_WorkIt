@@ -7,6 +7,7 @@ class RealHome extends Component{
     render(){
         return(
           <div style={{ 'minHeight': '100vh' }}>
+            
                 <Carousel>
                   <Carousel.Item>
                     <img
