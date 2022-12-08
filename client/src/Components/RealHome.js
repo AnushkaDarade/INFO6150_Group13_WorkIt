@@ -16,8 +16,7 @@ class RealHome extends Component{
                       alt="First slide"
                     />
                     <Carousel.Caption>
-                      <h3>Recipes Around The World</h3>
-                      <p>Relish in the world of cuisines! </p>
+                      <h3>Stay Grateful!</h3>
                     </Carousel.Caption>
                   </Carousel.Item>
 
@@ -28,8 +27,8 @@ class RealHome extends Component{
                       alt="Second slide"
                     />
                     <Carousel.Caption>
-                      <h3>Backpackers</h3>
-                      <p>Wandering with no destination!</p>
+                      {/* <h3>Backpackers</h3>
+                      <p>Wandering with no destination!</p> */}
                     </Carousel.Caption>
                   </Carousel.Item>
 
@@ -52,7 +51,7 @@ class RealHome extends Component{
                           {/* <Card.Img className='card-img' variant="top" src="images/foodCard.png" /> */}
                           <Card.Body className='card-body'>
                             <Card.Title>Want some inspiration? We have all the positive energy you would need for your life to be amazing, from sweet to spicy and everything in between!! With one click, you can enjoy Italian Pasta, Mexican Burritos, New York Style Pizza and Japanese Ramen. Looking for more recipes? Don't hesitate to go through all of them!</Card.Title>
-                            <Button className="btn-go-to" variant="primary" href="#food">Go to Blogs</Button>
+                            <Button className="btn-go-to" variant="primary" href="#blog">Go to Blogs</Button>
                           </Card.Body>
                         </Card>
 
