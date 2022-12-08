@@ -7,11 +7,11 @@ export class About extends Component {
     return (
         <div className='about-page'>
           <div className='about-container'>
-          <h1 style={{textAlign:"center"}}>We are Travelling-Spoon!! <img src={FoodGif} height="160px" width="160px"  alt="Food"/></h1>
+          <h1 style={{textAlign:"center"}}>WORK IT!! <img src={FoodGif} height="160px" width="160px"  alt="Food"/></h1>
           <div class="row" style={{marginTop:"25px"}}>
             <div class="small-12 small-centered large-9 columns text-center">
-              <h3>What is Traveling Spoon</h3>
-              <h5 style={{margin:"40px"}}>Traveling Spoon is like having a friend’s mom cook you a home cooked meal in every country you visit. 
+              <h3>What are we?</h3>
+              <h5 style={{margin:"40px"}}> <b>WORK IT</b> is like having a friend’s mom cook you a home cooked meal in every country you visit. 
                     Traveling Spoon connects travelers with local, vetted hosts to share the joy of a homemade meal in their home and 
                     learn about their cultural and culinary traditions passed down through generations.</h5>
             </div>
@@ -33,12 +33,7 @@ export class About extends Component {
          
           </div>
           </div>
-          <center>
-          <video controls="controls" autoplay="autoplay" loop="loop" style={{height:"170px",width:"550px"}} >
-  <source src={video} type="video/mp4"/>
-  
-</video>
-          </center>
+         
 
         </div>
     )
