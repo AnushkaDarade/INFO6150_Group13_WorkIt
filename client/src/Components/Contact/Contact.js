@@ -20,13 +20,13 @@ function Contact() {
       </div>
 
       <div className="text">
-      <h4>Hello there! We welcome your suggestions and ideas on how we can improve, and of course always love a friendly hello if you see us doing something you like. You can reach us anytime by emailing us at <a href="hello@travellingspoon.com">hello@travellingspoon.com</a> or filling out the form below.</h4>
+      <h4>Hey there! Hope you all had a beautiful day with our WORKIT!! You can share your views on this mail <a href="workit@gmail.com"> workit@gmail.com</a> or fill the form if you address any issues</h4>
       </div>
         <div className="row">
           <div className="col-md-6 col-10 mx-auto">
             <form id="my_form">
               <div className="form-group">
-                <label for="exampleFormControlInput1">Enter Full Name</label>
+                <label for="exampleFormControlInput1">Name</label>
                 <input
                   type="text"
                   className="form-control"
