@@ -1,14 +1,14 @@
 
 
 .about-page {
-    background-image: url("./road-image.jpg");
+    background-image: url("./aboutbg.jpg");
     background-repeat: no-repeat;
     background-position:center; 
     background-size:cover;
     position:relative;
     width: auto;
     height: auto;
-    color:antiquewhite;
+    color:rgb(81, 16, 116);
 }
 
 .about-container {

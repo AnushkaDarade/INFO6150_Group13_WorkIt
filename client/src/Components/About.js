@@ -7,7 +7,7 @@ export class About extends Component {
     return (
         <div className='about-page'>
           <div className='about-container'>
-          <h1 style={{textAlign:"center"}}>WORK IT!! <img src={FoodGif} height="160px" width="160px"  alt="Food"/></h1>
+          <h1 style={{textAlign:"center"}}>WORK IT!! </h1>
           <div class="row" style={{marginTop:"25px"}}>
             <div class="small-12 small-centered large-9 columns text-center">
               <h3>What are we?</h3>
