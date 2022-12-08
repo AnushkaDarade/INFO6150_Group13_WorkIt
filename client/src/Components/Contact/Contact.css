@@ -1,10 +1,10 @@
 .btn-outline-primary {
     color: #fff;
-    background-color: #C197D2;
+    background-color: #613659;
 }
 
 .bck-image {
-    background-image: url("./20220224-barnimages-1.jpg");
+    background-image: url("contactbg.jpg");
     background-repeat: no-repeat;
     background-position:center; 
     background-size:cover;
@@ -16,7 +16,7 @@
 .center-text {
     text-decoration: underline;
     text-align: center;
-    font-style: italic;
+    font-style: bold;
     font-size: 2.5em;
 }
 
