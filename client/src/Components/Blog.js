@@ -67,13 +67,13 @@ class Blog extends Component{
             <Container>
                 <Row >
                     <h2 className="d-flex justify-content-center">
-                        We appreciate your Feedback!
+                        Express your thoughts here!!
                     </h2>
                 </Row>
                 <Row>
                    
                     <Col xs={8} md={8}>
-                        <Form.Label><h5>Feedback</h5></Form.Label>
+                        <Form.Label><h5>My Journal</h5></Form.Label>
                     </Col>
                     <Col xs={3} md={3}>
                     <Dropdown className="d-flex justify-content-center">
