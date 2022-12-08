@@ -20,7 +20,7 @@ function Contact() {
       </div>
 
       <div className="text">
-      <h4>Hey there! Hope you all had a good and beautiful day with our WORKIT!! You can connect with us if you have any issues over here <a href="workit@gmail.com"> workit@gmail.com</a> and can put your reviews in the form below</h4>
+      <h4>Hey there! Hope you all had a beautiful day with our WORKIT!! You can share your views on this mail <a href="workit@gmail.com"> workit@gmail.com</a> or fill the form if you address any issues</h4>
       </div>
         <div className="row">
           <div className="col-md-6 col-10 mx-auto">
