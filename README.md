@@ -2,10 +2,10 @@
 
 Project - WorkIt
 
-Team Members -  Anushka Darade
-                Swetha Paturu
-                Prarthana Nemade
-                Viral Jangale
+Team Members -  Anushka Darade -- 002734159
+                Viral Jangale --002654463
+                Swetha Paturu -- 002747560
+                Prarthana Nemade --002790368
     
 Tech Stack -  React
               Express
