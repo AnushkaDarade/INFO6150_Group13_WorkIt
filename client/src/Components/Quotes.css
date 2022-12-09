@@ -8,7 +8,6 @@
   
    body{
     background-size: 300px 300px;
-    font-family: 'lobster', cursive;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 100px);
@@ -87,26 +86,38 @@
   
   .twitter-button{
     background:none;
+    align-items: center;
+
   }
   .twitter-button:hover {
     color: #38a1f3;
     filter: brightness(120%);
+    align-items: center;
+
   }
     
   .fa-twitter {
     font-size: 1.5rem;
     color: #38a1f3;
+    align-items: center;
+
   }
   
     @media only screen and (max-width: 450px) {
       .box-centerside {
         width: 270px;
+        align-items: center;
+
       }
       .text p{
         font-size:15px;
+        align-items: center;
+
       }
       .author h5{
         font-size:15px;
+        align-items: center;
+
       }
     }
   
