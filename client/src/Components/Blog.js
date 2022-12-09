@@ -65,7 +65,7 @@ class Blog extends Component{
 
         return(
             <Container>
-                <Row >
+                <Row className="heading">
                     <h2 className="d-flex justify-content-center">
                         Express your thoughts here!!
                     </h2>
@@ -73,7 +73,7 @@ class Blog extends Component{
                 <Row>
                    
                     <Col xs={8} md={8}>
-                        <Form.Label><h5>My Journal</h5></Form.Label>
+                        <Form.Label className="Journ"> <h5>My Journal</h5></Form.Label>
                     </Col>
                     <Col xs={3} md={3}>
                     <Dropdown className="d-flex justify-content-center">
@@ -99,7 +99,7 @@ class Blog extends Component{
                         <Form.Control
                             style={{backgroundColor:'##FFFFFF', color:'##FFFFFF', border: '0.5px solid #002934'}}
                             as="textarea" rows={1}
-                            placeholder='Feedback Heading'
+                            placeholder='What is your mood?'
                             value={this.state.heading}
                             onChange={(e)=> {this.setState({heading:e.target.value})}}
                             />
@@ -116,7 +116,7 @@ class Blog extends Component{
                             <Form.Control as="textarea" 
                             style={{backgroundColor:'#FFFFFF', color:'#000000', border: '0.5px solid #002934'}}
                             rows={this.state.rowLength}
-                            placeholder='Rate Us Here'
+                            placeholder='Write down your feelings...'
                             value={this.state.content}
                             onClick={(e)=>{this.setState({rowLength:10})}} 
                             onChange={(e)=> {this.setState({content:e.target.value})}}/>
