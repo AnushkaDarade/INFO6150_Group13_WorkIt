@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {useState, Component} from "react";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import { Container, Row, Image, Carousel, Col, Form,Button, Dropdown } from "react-bootstrap";
@@ -16,8 +16,8 @@ class Blog extends Component{
             rowLength:3,
             heading:'',
             content:'',
-            postTag:'Choose Category',
-            tagsList:['All','Tavelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
+            postTag:'Feelings',
+            tagsList:['Confused','Happy','Sad','Grateful','Joyful','Emotional','Surprised','Peaceful','Irritated','Angry'],
             selectedTag:'none',
             userName: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
             ? JSON.parse(localStorage.getItem("user")).userName
@@ -126,8 +126,10 @@ class Blog extends Component{
                             ?<Button className="btn-post" variant="primary" type="submit">Post</Button>
                             :<Button className="btn-post" variant="primary" type="submit" disabled>Post</Button>
                         }
+                        
                     </Form>
                     </Col >
+                    
                     
                     
                 </Row>

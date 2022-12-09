@@ -14,12 +14,12 @@
 
 
 .blog-card-title{
-    color: #254250 !important;
+    color: #503d25 !important;
     border-bottom: 1px solid rgb(30, 28, 28);
 }
 
 .blog-card-subtitle{
-    color: rgb(205, 206, 202) !important;
+    color: rgb(15, 15, 15) !important;
     font-size: 13px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -52,20 +52,21 @@
 }
 
 .tag-list-item {
-    background-color: #324049 !important;
-    border-bottom: 1px solid #e2f0e0 !important;
+    background-color: #e1cae8 !important;
+    border-bottom: 1px solid #5c525f !important;
     padding:0px !important;
     &:hover{
-        background-color: #d4b6d0 !important
+        background-color: hsl(314, 22%, 77%) !important
     }
 }
 
 .tag-list-itam-nav{
+    width:175px;
     text-align: center;
-    color:#e2f0e0 !important;
+    color:#0e0d0d !important;
     padding: 20px !important;
     &:hover{
-        background-color: #e2f0e0 !important;
+        background-color: hsl(314, 22%, 77%) !important;
         color: #324049 !important
     }
 }

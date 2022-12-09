@@ -27,6 +27,8 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome." });
 });
 
+//TO-DO
+// app.use("/api/notes",noteRoutes);
 
 
 

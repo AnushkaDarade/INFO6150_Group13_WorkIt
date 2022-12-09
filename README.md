@@ -15,9 +15,7 @@ Tech Stack -  React
               jQuery
               MongoDB
 
-Gist -  Website allows user to explore on the options related to Food and Travel. Users can provide feedback on the places that they visited.
-        Provision to read reviews upon the variety of food tried is also available. Last but not the least, website has the integration of 
-        google maps to search the places.
+Gist -  Website allows user to read quotes, write blogs and store notes for self.
 
 Points covered - 
 1. Website is responsive (Desktop and mobile friendly)
@@ -26,8 +24,7 @@ Points covered -
 4. Number of pages - 9
 5. Session Management - Maintained session by local storage
 6. Support for external APIs - 
-   1. api.spoonacular.com - for recipies list
-   2. maps.googleapis.com - to integrate google maps for location based search
+   1. https://api.quotable.io/random- for quotes list
 7. Project architecture is based on MVC. 
 8. CRUD operations are supported
 9. Data is stored and made consistent using MongoDB

@@ -17,8 +17,8 @@ class Home extends Component{
             blogs: [],
             showBlogs: [],
             reload:1,
-            tagsList:['All','Travelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
-            selectedTag:'All',
+            tagsList:['Confused','Happy','Sad','Grateful','Joyful','Emotional','Surprised', 'Peaceful','Irritated','Angry'],
+            selectedTag:'Confused',
             currentUser: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
                     ? JSON.parse(localStorage.getItem("user")).userName
                     : ''
