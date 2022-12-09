@@ -12,7 +12,7 @@ function footer() {
             <h6>Get in touch with us here: <br></br> <a href="mailto:workit@gmail.com">workit@gmail.com</a> or  
             <a href="tel:+1 857 987 8987">+1 +857 987 8987</a></h6>
 
-            All rights reserved © 2022. <i className=""></i> By WorkIt   
+            All rights reserved © 2022 <i className=""></i> by WorkIt.   
     
 </h5>
             
