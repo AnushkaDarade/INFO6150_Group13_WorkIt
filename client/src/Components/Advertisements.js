@@ -31,7 +31,7 @@ class Advertisements extends Component{
             {
                 title: 'Relaxation hub',
                 heading: 'Join Relaxation and Meditation hub to feel better! ',
-                imageUrl: 'images/',
+                imageUrl: 'images/relaxation.jpg',
                 imageText: 'Find a card that is for you!',
                 websiteLink: 'https://www.americanexpress.com/'
             },

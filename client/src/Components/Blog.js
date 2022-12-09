@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {useState, Component} from "react";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import { Container, Row, Image, Carousel, Col, Form,Button, Dropdown } from "react-bootstrap";
@@ -126,8 +126,10 @@ class Blog extends Component{
                             ?<Button className="btn-post" variant="primary" type="submit">Post</Button>
                             :<Button className="btn-post" variant="primary" type="submit" disabled>Post</Button>
                         }
+                        
                     </Form>
                     </Col >
+                    
                     
                     
                 </Row>
