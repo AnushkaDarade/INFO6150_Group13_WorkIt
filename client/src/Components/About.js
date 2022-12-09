@@ -22,14 +22,14 @@ export class About extends Component {
             <div class="small-12 small-centered large-9 columns text-center">
               <h3><u>What are we?</u></h3>
               <h5 style={{margin:"40px"}}> <b>WORK IT</b> is a super friendly website that allows the user to write their thoughts
-              and post it. Work It allows user to create a To-Do List to manage the day throughout. Work It lets the user use some self-care tips and follow it.
+              and post it. Work It allows user to create a To-Do List to manage the day throughout.
                </h5>
             </div>
           </div>
           <div class="row">
             <div class="small-12 small-centered large-9 columns text-center">
               <h3><u>What we offer?</u></h3>
-              <h5 style={{margin:"40px"}}>To help you access some self-care tips, post and read the blogs. We offer To-Do List functionality that will be used by the 
+              <h5 style={{margin:"40px"}}>To help you access some self motivating quotes, post and read the blogs. We offer To-Do List functionality that will be used by the 
               user to plan the day and act accordingly. </h5>
             </div>
           </div>
