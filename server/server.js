@@ -3,6 +3,7 @@ const bodyParser = require("body-parser"); // parse request
 const cors = require("cors"); // provides express middleware
 // const dbConfig = require("./app/config/db.config");
 const mongoose = require('mongoose');
+const noteRoutes = require("./app/routes/noteRoutes");
 const url = 'mongodb+srv://webd:webd@cluster0.28koesv.mongodb.net/?retryWrites=true&w=majority';
 
 const app = express();
@@ -23,6 +24,8 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome." });
 });
 
+//TO-DO
+app.use("/api/notes",noteRoutes);
 
 
 
