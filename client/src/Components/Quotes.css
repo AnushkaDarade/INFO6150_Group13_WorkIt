@@ -1,19 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    text-align: center;
-    align-items: center;
-  }
-  
-   body{
-    background-size: 300px 300px;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 100px);
-    overflow-y: hidden;
-    text-align: center;
-  }
+
   
   
         
@@ -31,10 +16,13 @@
     color:rgb(17, 50, 21);
     text-align: center;
     font-size: larger;
+    align-items: center;
+
     }
   
     .text p {
         text-align:center;
+        align-items: center;
         padding: 10px;
         margin: 0px 50px 0px 50px;
     }
@@ -45,6 +33,8 @@
       margin-block-end: 1em;
       color: gray;
       text-align: center;
+      align-items: center;
+
     }
   
     .button-container {
@@ -52,6 +42,7 @@
       margin-top: 15px;
       display: flex;
       align-items: center;
+      text-align: center;
       justify-content: space-between;
     }
   
@@ -64,21 +55,29 @@
       background: #8A2387; 
       outline: none;
       padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+      text-align: center;
       align-items: center;
+
+
     }
   
   button:hover {
     filter: brightness(110%);
     border: none;
     outline:0;
+    text-align: center;
+
   }
   button:focus {
     filter: brightness(120%);
     border: none;
     outline:0;
+    text-align: center;
+
   }
   
   button:active {
+    text-align: center;
     border: none; 
   }
   
@@ -87,12 +86,16 @@
   .twitter-button{
     background:none;
     align-items: center;
+    text-align: center;
+
 
   }
   .twitter-button:hover {
     color: #38a1f3;
     filter: brightness(120%);
     align-items: center;
+    text-align: center;
+
 
   }
     
@@ -100,6 +103,8 @@
     font-size: 1.5rem;
     color: #38a1f3;
     align-items: center;
+    text-align: center;
+
 
   }
   
@@ -107,16 +112,20 @@
       .box-centerside {
         width: 270px;
         align-items: center;
+        text-align: center;
+
 
       }
       .text p{
         font-size:15px;
+        text-align: center;
         align-items: center;
 
       }
       .author h5{
         font-size:15px;
         align-items: center;
+        text-align: center;
 
       }
     }

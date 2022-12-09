@@ -41,7 +41,7 @@ const Quotes = () => {
           <center><button className="twitter-button" onClick={tweetQuote}>
             <i className="fab fa-twitter"></i>
           </button></center>
-          <center><button onClick={getNewQuote}>New Quote</button></center>
+          <center><button onClick={getNewQuote}><center>New Quote</center></button></center>
         </div>
       </div>
     </div>
