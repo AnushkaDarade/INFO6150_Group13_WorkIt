@@ -6,7 +6,7 @@ const getNotes = asyncHandler(async (req, res) => {
     res.json(notes);
   });
 
-const CreateNote = asyncHandler(async (req, res) => {
+const createNote = asyncHandler(async (req, res) => {
     const { title, content, category } = req.body;
   
     if (!title || !content || !category) {
@@ -23,4 +23,4 @@ const CreateNote = asyncHandler(async (req, res) => {
   });
 
 //   export { getNoteById, getNotes, CreateNote, DeleteNote, UpdateNote };
-  export { getNotes, CreateNote };
+  export { getNotes, createNote };
