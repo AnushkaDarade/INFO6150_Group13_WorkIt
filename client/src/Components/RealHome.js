@@ -12,7 +12,7 @@ class RealHome extends Component{
                   <Carousel.Item>
                     <img
                       className="d-block w-100 h-20"
-                      src="images/c1.png"
+                      src="images/home2.jpg"
                       alt="First slide"
                     />
                     
@@ -21,7 +21,7 @@ class RealHome extends Component{
                   <Carousel.Item>
                     <img
                       className="d-block  w-100 h-20"
-                      src="images/c2.png"
+                      src="images/home1.jpg"
                       alt="Second slide"
                     />
                     
