@@ -1,11 +1,10 @@
-
-  
-  
-        
+   
   /*Quotes*/
   
+  
   .box-centerside {
-    font-family: 'lobster', cursive;
+    border: #a750d0;
+    font-family: 'arial black';
     background-image: url("./bg-about.jpg");
     background-repeat: no-repeat;
     background-position:center; 
@@ -13,9 +12,9 @@
     position:relative;
     width: auto;
     height: auto;
-    color:rgb(17, 50, 21);
+    color:rgb(27, 77, 142);
     text-align: center;
-    font-size: larger;
+    font-size: 2.2rem;
     align-items: center;
 
     }
@@ -28,32 +27,33 @@
     }
     
     .author h5 {
-      font-family: cursive;
+      font-family: 'lobster';
       margin-block-start: 1em;
       margin-block-end: 1em;
-      color: gray;
+      color: rgb(105, 28, 28);
       text-align: center;
       align-items: center;
 
     }
   
     .button-container {
+      font-family: 'times new roman';
       align-content: center;
       margin-top: 15px;
+      margin-left: 470px;
       display: flex;
       align-items: center;
       text-align: center;
-      justify-content: space-between;
     }
   
     button {
       cursor: pointer;
-      font-size: 1.2rem;
-      height: 2.5rem;
+      font-size: 1.5rem;
+      height: 2.6rem;
       border: none;
-      color: #fff;
-      background: #8A2387; 
-      outline: none;
+      color: rgb(135, 183, 237);
+      background: #190e56; 
+      border: black;
       padding: 0.5rem 1.8rem 0.5rem 1.8rem;
       text-align: center;
       align-items: center;
@@ -87,9 +87,8 @@
     background:none;
     align-items: center;
     text-align: center;
-
-
   }
+  
   .twitter-button:hover {
     color: #38a1f3;
     filter: brightness(120%);
@@ -100,8 +99,8 @@
   }
     
   .fa-twitter {
-    font-size: 1.5rem;
-    color: #38a1f3;
+    font-size: 20px;
+    color: #0c0258;
     align-items: center;
     text-align: center;
 
@@ -130,3 +129,100 @@
       }
     }
   
+
+/* css for cards */
+.card-img{
+    height: 375px;
+    width: 375px;
+    object-fit:fill;
+    transition: all 1s ease;
+    display: inline-block;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .card-img{
+        height: 294px;
+        width: 294px;
+        object-fit:fill;
+        transition: all 1s ease;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .home-cards {
+        width: 100%;
+    }
+
+    .h5, .btn-go-to {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .home-cards {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .card-img {
+        height: 336px;
+        width: 336px;
+        object-fit:fill;
+        transition: all 1s ease;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .home-cards {
+        width: 100%;
+    }
+
+    .h5, .btn-go-to {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-img{
+        height: 403px;
+        width: 403px;
+        object-fit:fill;
+        transition: all 1s ease;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .home-cards {
+        width: calc(80% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .h5, .btn-go-to {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .card-img{
+        height: 440px;
+        width: 440px;
+        object-fit:fill;
+        transition: all 1s ease;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .home-cards {
+        width: calc(80%);
+        margin-bottom: 20px;
+    }
+
+    .h5, .btn-go-to {
+        font-size: 0.5rem;
+    }
+}

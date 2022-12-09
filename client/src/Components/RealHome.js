@@ -42,8 +42,8 @@ class RealHome extends Component{
                         <Card className="home-cards">
                           {/* <Card.Img className='card-img' variant="top" src="images/foodCard.png" /> */}
                           <Card.Body className='card-body'>
-                            <Card.Title>What is Self-care?  Self-care has been defined as the process of establishing behaviors to ensure holistic well-being of oneself, to promote health, and to actively management of illness when it occurs. Individuals engage in some form of self-care daily with food choices, exercise, sleep, and dental care.</Card.Title>
-                            <Button className="btn-go-to" variant="primary" href="#food">Go to Selfcare</Button>
+                            <Card.Title>Read some Quotes and get yourself ready for the day.</Card.Title>
+                            <Button className="btn-go-to" variant="primary" href="#quotes">Go to Quotes</Button>
                           </Card.Body>
                         </Card>
 
