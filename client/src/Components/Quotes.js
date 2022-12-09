@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "./Quotes.css";
+
 
 const url = "https://api.quotable.io/random";
 
@@ -27,20 +29,23 @@ const Quotes = () => {
 
   const { content, author } = quotes;
   return (
+
+    <center>
     <div className="box-centerside">
       <div className="text">
-        <p>{content}</p>
+        <center><p>{content}</p></center>
       </div>
       <div className="author">
         <h5>{author}</h5>
         <div className="button-container">
-          <button className="twitter-button" onClick={tweetQuote}>
+          <center><button className="twitter-button" onClick={tweetQuote}>
             <i className="fab fa-twitter"></i>
-          </button>
-          <button onClick={getNewQuote}>New Quote</button>
+          </button></center>
+          <center><button onClick={getNewQuote}>New Quote</button></center>
         </div>
       </div>
     </div>
+    </center>
   );
 };
 
