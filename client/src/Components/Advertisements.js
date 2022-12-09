@@ -29,9 +29,9 @@ class Advertisements extends Component{
                 websiteLink: 'https://www.lufthansa.com/us/en/homepage'
             },
             {
-                title: 'American Express',
-                heading: 'Offering you a brand new travel card! Amex Platinum - get 100,000 miles signing bonus! ',
-                imageUrl: 'images/amex.jpg',
+                title: 'Relaxation hub',
+                heading: 'Join Relaxation and Meditation hub to feel better! ',
+                imageUrl: 'images/',
                 imageText: 'Find a card that is for you!',
                 websiteLink: 'https://www.americanexpress.com/'
             },
