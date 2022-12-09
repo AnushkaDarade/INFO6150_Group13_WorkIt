@@ -11,21 +11,26 @@ class RealHome extends Component{
                 <Carousel>
                   <Carousel.Item>
                     <img
-                      className="d-block w-50 h-30"
+                      className="d-block w-100 h-20"
                       src="images/c1.png"
                       alt="First slide"
                     />
                     <Carousel.Caption>
-                      <h3>Stay Grateful!</h3>
+                      <p style={{color: 'purple'}} ><h3>WELCOME!</h3></p>
+                      
                     </Carousel.Caption>
                   </Carousel.Item>
 
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
+                      className="d-block w-50 h-30 left-margin-50"
                       src="images/c2.png"
                       alt="Second slide"
                     />
+                    <Carousel.Caption>
+                      <p style={{color: 'purple'}} ><h3>WELCOME!</h3></p>
+                      
+                    </Carousel.Caption>
                     <Carousel.Caption>
                       {/* <h3>Backpackers</h3>
                       <p>Wandering with no destination!</p> */}
@@ -52,6 +57,14 @@ class RealHome extends Component{
                           <Card.Body className='card-body'>
                             <Card.Title>Want some inspiration? Go read the blogs written by the users and get yourself upgraded. Have a good day!</Card.Title>
                             <Button className="btn-go-to" variant="primary" href="#blog">Go to Blogs</Button>
+                          </Card.Body>
+                        </Card>
+
+                        <Card className="home-cards">
+                          {/* <Card.Img className='card-img' variant="top" src="images/foodCard.png" /> */}
+                          <Card.Body className='card-body'>
+                            <Card.Title>Had a long day? Get your keypad and start noting the things down in your very own journal. Happy writing!</Card.Title>
+                            <Button className="btn-go-to" variant="primary" href="#myblogs">Go to My Journal</Button>
                           </Card.Body>
                         </Card>
 

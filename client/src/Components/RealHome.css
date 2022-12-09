@@ -20,6 +20,7 @@
 
     .home-cards {
         width: 100%;
+
     }
 
     .h5, .btn-go-to {
@@ -35,7 +36,7 @@
     }
 
     .card-img {
-        height: 336px;
+        height: 36px;
         width: 336px;
         object-fit:fill;
         transition: all 1s ease;
