@@ -1,10 +1,16 @@
-   
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Heebo:wght@300&family=Luckiest+Guy&family=Titan+One&family=Ultra&display=swap');
   /*Quotes*/
+  marquee{
+    font-size: 30px;
+    font-weight: 800;
+    color: #741551;
+    font-family: 'cookie';
+}
   
   
   .box-centerside {
     border: #a750d0;
-    font-family: 'arial black';
+    font-family: 'Ultra', serif;
     background-image: url("./bg-about.jpg");
     background-repeat: no-repeat;
     background-position:center; 
@@ -20,6 +26,7 @@
     }
   
     .text p {
+        font-family: 'Ultra', serif;
         text-align:center;
         align-items: center;
         padding: 10px;

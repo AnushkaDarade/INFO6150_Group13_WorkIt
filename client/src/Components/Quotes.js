@@ -36,6 +36,7 @@ const Quotes = () => {
   return (
 
     <center>
+    <marquee> <h4>We hope you are having a good day! Enjoy your day ahead.</h4> </marquee>
 
     <div className="box-centerside">
       <div className="text">

@@ -50,7 +50,7 @@ class RealHome extends Component{
                         <Card className="home-cards">
                           {/* <Card.Img className='card-img' variant="top" src="images/foodCard.png" /> */}
                           <Card.Body className='card-body'>
-                            <Card.Title>Want some inspiration? We have all the positive energy you would need for your life to be amazing, from sweet to spicy and everything in between!! With one click, you can enjoy Italian Pasta, Mexican Burritos, New York Style Pizza and Japanese Ramen. Looking for more recipes? Don't hesitate to go through all of them!</Card.Title>
+                            <Card.Title>Want some inspiration? Go read the blogs written by the users and get yourself upgraded. Have a good day!</Card.Title>
                             <Button className="btn-go-to" variant="primary" href="#blog">Go to Blogs</Button>
                           </Card.Body>
                         </Card>
