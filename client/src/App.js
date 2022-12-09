@@ -3,7 +3,6 @@ import {Route, HashRouter} from 'react-router-dom';
 import Home from './Components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Travel from './Components/Travel/Travel';
-import Food from './Components/Food';
 import Blog from './Components/Blog';
 import BlogA from './Components/BlogA';
 import LoginModal from './Components/LoginModal';
@@ -15,7 +14,8 @@ import Footer from './Components/Footer/footer';
 import SocialMedia from './Components/SocialMedia.js/SocialMedia';
 import RealHome from './Components/RealHome';
 import About from './Components/About';
-import Contact from './Components/Contact/Contact'
+import Contact from './Components/Contact/Contact';
+import Quotes from './Components/Quotes';
 
 
 
@@ -64,7 +64,7 @@ class App extends Component{
 				<Route exact path ='/' component={RealHome}/>
 				<Route path ='/home' component={ RealHome} />
 				<Route path ='/travel' component={Travel} />
-				<Route path ='/food' component={Food} />
+				<Route path ='/quotes' component={Quotes} />
                 <Route path ='/about' component={About} />
                 <Route path ='/contact' component={Contact} />
                 <Route path ='/blog' component={Home} />

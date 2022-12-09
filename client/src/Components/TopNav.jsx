@@ -28,7 +28,7 @@ const TopNav = () => {
 					  >
 					    <Nav.Link activeClassName="active" exact as={NavLink} to='/' className='navbar-text' href="#home">HOME</Nav.Link>
 
-              <Nav.Link activeClassName="active" as={NavLink} to='/food' className='navbar-text' href="#food">SELFCARE</Nav.Link>
+              <Nav.Link activeClassName="active" as={NavLink} to='/quotes' className='navbar-text' href="#quotes">QUOTES</Nav.Link>
 					    {/* <Nav.Link activeClassName="active" as={NavLink} to='/travel' className='navbar-text' href="#travel">TRAVEL</Nav.Link> */}
               <Nav.Link activeClassName="active" as={NavLink} to='/blog' className='navbar-text' href="#blog">BLOGS</Nav.Link>
 						{

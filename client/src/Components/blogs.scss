@@ -1,37 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=La+Belle+Aurore&display=swap');
+
+.entries{
+    font-family: 'La Belle Aurore', cursive;
+
+}
 .blog-card{
-    background-color: #e2f0e0 !important;
+    background-color: #e3d4c6
+
+    !important;
     margin-bottom: 25px !important;
-    border: 1px solid #324049 !important;
+    border: 1px solid #605a4e !important;
 }
 
 
 .blog-card-title{
-    color: #324049 !important;
-    border-bottom: 1px solid grey;
+    color: #254250 !important;
+    border-bottom: 1px solid rgb(30, 28, 28);
 }
 
 .blog-card-subtitle{
-    color: #324049 !important;
+    color: rgb(205, 206, 202) !important;
     font-size: 13px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
 
 .blog-card-text{
-    background-color: #e2f0e0 !important;
+    background-color: #eaf0ed !important;
     padding: 10px !important;
     margin-left: 15px !important;
     margin-right: 15px !important;
-    color: #324049 !important;
+    color: #0a0b0b !important;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
 
 .btn-comment{
     width:150px !important;
-    border: 1px solid #e2f0e0 !important;
-    color: #324049 !important;
-    background-color: #e2f0e0 !important;
+    border: 1px solid #615e4a !important;
+    color: #151719 !important;
+    background-color: #e3d4c6 !important;
 }
 
 .footer-icon{
@@ -40,7 +48,7 @@
 
 .blog-card-footer{
     padding-top: 15px !important;
-    background-color: #324049 !important;
+    background-color: #a9937b !important;
 }
 
 .tag-list-item {
@@ -48,7 +56,7 @@
     border-bottom: 1px solid #e2f0e0 !important;
     padding:0px !important;
     &:hover{
-        background-color: #e2f0e0 !important
+        background-color: #d4b6d0 !important
     }
 }
 
@@ -67,7 +75,7 @@
 }
 
 .comment-card{
-    background-color: #e2f0e0 !important;
+    background-color: #abb592 !important;
     padding-top:10px !important ;
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -101,4 +109,5 @@
     color: #d5f8d2 !important;
     height:5px !important;
 }
+    
 

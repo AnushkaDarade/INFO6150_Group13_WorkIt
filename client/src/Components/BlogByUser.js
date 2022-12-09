@@ -44,8 +44,8 @@ class  BlogByUser extends Component{
 
         return(
             <div>
-                <h1>
-                    My posts
+                <h1 className="entries">
+                    Journal Entries
                 </h1>
                 {
                     this.state.loading === true

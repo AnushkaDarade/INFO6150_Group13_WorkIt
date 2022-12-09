@@ -17,7 +17,7 @@ class Blog extends Component{
             heading:'',
             content:'',
             postTag:'Choose Category',
-            tagsList:['All','Travelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
+            tagsList:['All','Tavelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
             selectedTag:'none',
             userName: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
             ? JSON.parse(localStorage.getItem("user")).userName
@@ -65,15 +65,15 @@ class Blog extends Component{
 
         return(
             <Container>
-                <Row >
+                <Row className="heading">
                     <h2 className="d-flex justify-content-center">
-                        We appreciate your Feedback!
+                        Express your thoughts here!!
                     </h2>
                 </Row>
                 <Row>
                    
                     <Col xs={8} md={8}>
-                        <Form.Label><h5>Feedback</h5></Form.Label>
+                        <Form.Label className="Journ"> <h5>My Journal</h5></Form.Label>
                     </Col>
                     <Col xs={3} md={3}>
                     <Dropdown className="d-flex justify-content-center">
@@ -99,7 +99,7 @@ class Blog extends Component{
                         <Form.Control
                             style={{backgroundColor:'##FFFFFF', color:'##FFFFFF', border: '0.5px solid #002934'}}
                             as="textarea" rows={1}
-                            placeholder='Feedback Heading'
+                            placeholder='What is your mood?'
                             value={this.state.heading}
                             onChange={(e)=> {this.setState({heading:e.target.value})}}
                             />
@@ -116,7 +116,7 @@ class Blog extends Component{
                             <Form.Control as="textarea" 
                             style={{backgroundColor:'#FFFFFF', color:'#000000', border: '0.5px solid #002934'}}
                             rows={this.state.rowLength}
-                            placeholder='Rate Us Here'
+                            placeholder='Write down your feelings...'
                             value={this.state.content}
                             onClick={(e)=>{this.setState({rowLength:10})}} 
                             onChange={(e)=> {this.setState({content:e.target.value})}}/>

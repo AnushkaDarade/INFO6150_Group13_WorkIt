@@ -16,9 +16,6 @@ class BlogA extends Component{
             rowLength:3,
             heading:'',
             content:'',
-            postTag:'Choose Category',
-            tagsList:['All','Travelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
-            selectedTag:'none',
             userName: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
             ? JSON.parse(localStorage.getItem("user")).userName
             : ''
@@ -35,9 +32,6 @@ class BlogA extends Component{
             var yyyy = today.getFullYear();
             today = mm + '/' + dd + '/' + yyyy;
             var tag_new=''
-            this.state1.postTag === 'Choose Category'
-            ? tag_new = 'Miscellaneous'
-            : tag_new= this.state1.postTag
             BlogServices.addPost(
                 tag_new,
                 this.state1.heading,
@@ -51,7 +45,7 @@ class BlogA extends Component{
                     console.log('error.respons')
                 })
             const blog={ //add user id
-                tag:this.state1.postTag,
+                // tag:this.state1.postTag,
                 head:this.state1.heading,
                 content:this.state1.content,
                 
@@ -67,29 +61,15 @@ class BlogA extends Component{
             <Container>
                 <Row >
                     <h2 className="d-flex justify-content-center">
-                        We appreciate your Feedback!
+                        Create your To-Do List
                     </h2>
                 </Row>
                 <Row>
                    
-                    <Col xs={8} md={8}>
-                        <Form.Label><h5>Feedback</h5></Form.Label>
+                    <Col xs={12} >
+                        <Form.Label><h5>To-Do</h5></Form.Label>
                     </Col>
-                    <Col xs={3} md={3}>
-                    <Dropdown className="d-flex justify-content-center">
-                              <Dropdown.Toggle className='dropdown-tag' id="dropdown-basic" >
-                                {<b>{this.state1.postTag}</b>}
-                              </Dropdown.Toggle>
-            
-                              <Dropdown.Menu className='dropdown-menu'>
-                                  {this.state1.tagsList.map((tag)=>(
-                                      <Dropdown.Item className='dropdown-item-tag' 
-                                      onClick={(e)=>{this.setState({postTag:tag})}} 
-                                      key={tag}>{<b>{tag}</b>}</Dropdown.Item>
-                                  ))}
-                              </Dropdown.Menu>
-                            </Dropdown>
-                    </Col>
+                    
                 </Row>
                 <Row>
                     
@@ -99,7 +79,7 @@ class BlogA extends Component{
                         <Form.Control
                             style={{backgroundColor:'##FFFFFF', color:'##FFFFFF', border: '0.5px solid #002934'}}
                             as="textarea" rows={1}
-                            placeholder='Feedback Heading'
+                            placeholder='Task Heading'
                             value={this.state1.heading}
                             onChange={(e)=> {this.setState({heading:e.target.value})}}
                             />
@@ -116,7 +96,7 @@ class BlogA extends Component{
                             <Form.Control as="textarea" 
                             style={{backgroundColor:'#FFFFFF', color:'#000000', border: '0.5px solid #002934'}}
                             rows={this.state1.rowLength}
-                            placeholder='Rate Us Here'
+                            placeholder='Write about your Task'
                             value={this.state1.content}
                             onClick={(e)=>{this.setState({rowLength:10})}} 
                             onChange={(e)=> {this.setState({content:e.target.value})}}/>
@@ -137,13 +117,6 @@ class BlogA extends Component{
                         <BlogByUser userName={this.state1.userName}/>
                     </Col>
 
-                    {/* <Col xs={12} md={3}>
-                        <div className='ads-ads'>
-                            <Advertisements />
-                            <Advertisements />
-                            <Advertisements />
-                        </div>
-                    </Col> */}
 
                 </Row>
                 
