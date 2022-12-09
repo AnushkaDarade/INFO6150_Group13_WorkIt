@@ -7,10 +7,11 @@ export class About extends Component {
     return (
         <div className='about-page'>
           <div className='about-container'>
+            <br></br>
           <h1 style={{textAlign:"center"}}><b>WORK IT!!</b></h1><br></br><br></br><br></br>
           
           <center>
-          <video controls="controls" autoplay="autoplay" loop="loop" style={{height:"230px",width:"590px"}} >
+          <video controls="controls" autoplay="autoplay" loop="loop" style={{height:"250px",width:"630px"}} >
           <source src={video} type="video/mp4"/>
           </video>
           </center>
