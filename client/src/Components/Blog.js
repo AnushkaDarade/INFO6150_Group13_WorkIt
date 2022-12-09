@@ -16,8 +16,8 @@ class Blog extends Component{
             rowLength:3,
             heading:'',
             content:'',
-            postTag:'Choose Category',
-            tagsList:['All','Tavelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
+            postTag:'Feelings',
+            tagsList:['Confused','Happy','Sad','Grateful','Joyful','Emotional','Surprised','Peaceful','Irritated','Angry'],
             selectedTag:'none',
             userName: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
             ? JSON.parse(localStorage.getItem("user")).userName
