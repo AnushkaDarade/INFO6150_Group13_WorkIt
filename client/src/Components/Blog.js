@@ -17,7 +17,7 @@ class Blog extends Component{
             heading:'',
             content:'',
             postTag:'Choose Category',
-            tagsList:['All','Travelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
+            tagsList:['All','Tavelling Alone','Adventurous Activities','Backpackers Advice','Travelling Stories','Hikes and Trails','Budget Travel', 'Special Diet','Recipies','Miscellaneous'],
             selectedTag:'none',
             userName: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
             ? JSON.parse(localStorage.getItem("user")).userName

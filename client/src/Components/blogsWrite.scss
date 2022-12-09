@@ -6,7 +6,7 @@
 
 .btn-post{
     color: #e2f0e0 !important;
-    background-color: #324049 !important;
+    background-color: #52307c !important;
 }
 
 .user-blogs{
@@ -32,24 +32,24 @@
 }
 
 .dropdown-item-tag{
-    color: #e2f0e0 !important;
-    background-color: #324049 !important;
-    border-bottom:0.5px solid #e2f0e0 ;
-    border-top:0.5px solid #e2f0e0 ;
+    color: #161715 !important;
+    background-color: #e1cae8 !important;
+    border-bottom:0.5px solid #5c525f ;
+    border-top:0.5px solid #c7bfca ;
     border-radius: 0.5ch;
     &:hover{
-        background-color: #e2f0e0 !important;
-    color: #324049 !important;
+        background-color: hsl(314, 22%, 77%) !important;
+    color: #393c3d !important;
     }
 }
 .dropdown-menu{
-    background-color: #e3f8d2;
+    background-color: #e7cde3;
     border-collapse: collapse !important;
     border:1px solid #e3f8d2;
 }
 
 .dropdown-tag{
-    background-color: #324049 !important;
+    background-color: #52307c !important;
     color: #e2f0e0 !important;
 }
 
