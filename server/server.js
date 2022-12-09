@@ -1,9 +1,13 @@
 const express = require("express"); // for building rest apis
+//import bodyParser from "body-parser";
 const bodyParser = require("body-parser"); // parse request
 const cors = require("cors"); // provides express middleware
+//import cors from "cors";
 // const dbConfig = require("./app/config/db.config");
 const mongoose = require('mongoose');
+
 const url = 'mongodb+srv://webd:webd@cluster0.28koesv.mongodb.net/?retryWrites=true&w=majority';
+const todoRoutes =  require('../server/app/routes/todo.routes');
 
 const app = express();
 var corsOptions = {
@@ -30,6 +34,8 @@ app.get("/", (req, res) => {
 require("./app/routes/auth.routes")(app); // authentication route
 //require("./app/routes/user.routes")(app); // authorization route
 require("./app/routes/post")(app);
+require("./app/routes/todo.routes")(app);
+//app.use("/api/notes",todoRoutes);
 
 
 // set port, listen for requests

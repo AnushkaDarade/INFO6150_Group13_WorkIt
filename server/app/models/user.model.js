@@ -35,6 +35,7 @@ const User = mongoose.model(
       required: true
   },
   posts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Post' }],
+  todos: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Note' }],
    
 });
 
