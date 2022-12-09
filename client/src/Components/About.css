@@ -1,6 +1,7 @@
 
 
 .about-page {
+    font-family: 'lobster', cursive;
     background-image: url("./bgabout.jpg");
     background-repeat: no-repeat;
     background-position:center; 
@@ -8,8 +9,9 @@
     position:relative;
     width: auto;
     height: auto;
-    color:rgb(81, 16, 116);
+    color:rgb(17, 50, 21);
 }
+
 
 .about-container {
     text-align:left;
