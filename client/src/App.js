@@ -4,7 +4,7 @@ import Home from './Components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Travel from './Components/Travel/Travel';
 import Blog from './Components/Blog';
-import BlogA from './Components/BlogA';
+import Todo from './Components/Todo';
 import LoginModal from './Components/LoginModal';
 import SignUpModal from './Components/SignUpModal';
 import $ from 'jquery';
@@ -43,6 +43,10 @@ class App extends Component{
 		//blog should have tags, post, email
 	}
 
+    writeTodo=(details)=>{
+
+    }
+
     userAuth = () =>{
         console.log(this.state)
         var api="http://localhost:3000/user/getAll"
@@ -69,7 +73,7 @@ class App extends Component{
                 <Route path ='/contact' component={Contact} />
                 <Route path ='/blog' component={Home} />
 				<Route path ='/myblogs' component={ (props) => <Blog credentials= {this.state.credentials} blogs={this.state.blogs} writeBlog = {(details)=>this.writeBlog(details)}/>} />				
-				<Route path ='/todo' component={ (props) => <BlogA credentials= {this.state.credentials} blogs={this.state.blogs} writeBlog = {(details)=>this.writeBlog(details)}/>} />				
+				<Route path ='/todo' component={ (props) => <Todo credentials= {this.state.credentials} blogs={this.state.blogs} writeTodo = {(details)=>this.writeTodo(details)}/>} />				
                 <Route exact path="/signup" component={SignUpModal} />
                 <Route exact path="/login" component={LoginModal} />
                 <Route  path="/post/:id" component={BlogId} />

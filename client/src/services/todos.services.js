@@ -14,18 +14,6 @@ class TodoServices {
         });
     }
 
-    getPostWithTag(tags){
-      console.log(tags)
-        return axios
-        .get(apiurl + "tags", {
-          params:{ tags:tags},  
-          headers: authHeader() }
-          )
-        .then(response => { 
-          return response.data;
-        });
-    }
-
     getPostByUser(userName){
         return axios
         .get(apiurl +"mypost",
@@ -49,27 +37,6 @@ class TodoServices {
         });
     }
 
-    addPostComment(id, userName, comment){
-        console.log("Post Comment called");
-        return axios
-        .put(apiurl + "comment", {
-            id,
-            userName,comment
-        })
-        .then(response => { 
-          return response.data;
-        });
-    }
-
-    getPostById(id){
-      return axios
-      .get(apiurl +"id",
-      {params:{ id:id} }
-      )
-      .then(response => { 
-        return response.data;
-      });
-  }
 
 }
 
