@@ -33,13 +33,13 @@ const TopNav = () => {
               <Nav.Link activeClassName="active" as={NavLink} to='/blog' className='navbar-text' href="#blog">BLOGS</Nav.Link>
 						{
 							localStorage.getItem('user') === null
-							? <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs" disabled>MY JOURNAL</Nav.Link>
-							: <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">MY JOURNAL</Nav.Link>
+							? <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs" disabled>MY POSTS</Nav.Link>
+							: <Nav.Link activeClassName="active" as={NavLink} to='/myblogs' className='navbar-text' href="#myblogs">MY POSTS</Nav.Link>
             }
 						{
 							localStorage.getItem('user') === null
-							? <Nav.Link activeClassName="active" as={NavLink} to='/todo' className='navbar-text' href="#todo" disabled>TO-DO</Nav.Link>
-							: <Nav.Link activeClassName="active" as={NavLink} to='/todo' className='navbar-text' href="#todo">TO-DO</Nav.Link>
+							? <Nav.Link activeClassName="active" as={NavLink} to='/todo' className='navbar-text' href="#todo" disabled>MY JOURNAL</Nav.Link>
+							: <Nav.Link activeClassName="active" as={NavLink} to='/todo' className='navbar-text' href="#todo">MY JOURNAL</Nav.Link>
 
 						}
               <Nav.Link activeClassName="active" exact as={NavLink} to='/about' className='navbar-text' href="#about">ABOUT</Nav.Link>

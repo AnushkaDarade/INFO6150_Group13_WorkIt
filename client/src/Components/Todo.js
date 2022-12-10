@@ -53,13 +53,13 @@ class Todo extends Component{
             <Container>
                 <Row >
                     <h2 className="d-flex justify-content-center">
-                        Create your To-Do List
+                        Your Personal Space
                     </h2>
                 </Row>
                 <Row>
                    
                     <Col xs={12} >
-                        <Form.Label><h5>To-Do</h5></Form.Label>
+                        <Form.Label><h5></h5></Form.Label>
                     </Col>
                     
                 </Row>
@@ -71,7 +71,7 @@ class Todo extends Component{
                         <Form.Control
                             style={{backgroundColor:'##FFFFFF', color:'##FFFFFF', border: '0.5px solid #002934'}}
                             as="textarea" rows={1}
-                            placeholder='Task Heading'
+                            placeholder='Title'
                             value={this.state.heading}
                             onChange={(e)=> {this.setState({heading:e.target.value})}}
                             />
@@ -88,15 +88,15 @@ class Todo extends Component{
                             <Form.Control as="textarea" 
                             style={{backgroundColor:'#FFFFFF', color:'#000000', border: '0.5px solid #002934'}}
                             rows={this.state.rowLength}
-                            placeholder='Write about your Task'
+                            placeholder='I am awesome...'
                             value={this.state.content}
                             onClick={(e)=>{this.setState({rowLength:10})}} 
                             onChange={(e)=> {this.setState({content:e.target.value})}}/>
                         </Form.Group>
                         {
                             this.state.heading !== '' && this.state.content !==''
-                            ?<Button className="btn-post" variant="primary" type="submit">Post</Button>
-                            :<Button className="btn-post" variant="primary" type="submit" disabled>Post</Button>
+                            ?<Button className="btn-post" variant="primary" type="submit">Add To Journal</Button>
+                            :<Button className="btn-post" variant="primary" type="submit" disabled>Add to Journal</Button>
                         }
                     </Form>
                     </Col >

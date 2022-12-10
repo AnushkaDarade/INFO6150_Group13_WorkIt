@@ -40,7 +40,7 @@ class  TodoByUser extends Component{
         return(
             <div>
                 <h1 className="entries">
-                    Todo Entries
+                   Journal Entries
                 </h1>
                 {
                     this.state.loading === true
@@ -94,8 +94,6 @@ class  TodoByUser extends Component{
                                     }))
                                 }}
                                 >{post.view}</NavLink>
-                                    
-                                <Card.Subtitle className="mb-2 text-end blog-card-subtitle">Posted on: {post.postDate}</Card.Subtitle>
                                 
                                 
                             </Card>

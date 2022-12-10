@@ -12,7 +12,6 @@ const asyncHandler = require("express-async-handler");
 
 exports.getAllTodos = (req,res) => {
 Note.find().then(documents => {
-    console.log(documents)
      if(documents){
         res.status(200).json({
         message: "All Todos fetched successfully!",

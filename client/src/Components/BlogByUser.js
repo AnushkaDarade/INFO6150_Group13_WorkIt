@@ -45,7 +45,7 @@ class  BlogByUser extends Component{
         return(
             <div>
                 <h1 className="entries">
-                    Journal Entries
+                  Your Posts 
                 </h1>
                 {
                     this.state.loading === true
@@ -184,13 +184,6 @@ class  BlogByUser extends Component{
                                             > Reply</Button>
                                         </Form>    
                                 </ListGroup>
-
-                                    < FacebookShareButton className='footer-icon' url={'http://localhost:3000/#/post/'+post._id}>
-                                      <FacebookIcon size ={33} round/>
-                                        </FacebookShareButton>
-                                        < LinkedinShareButton className='footer-icon' url={'http://localhost:3000/#/post/'+post._id}>
-                                      <LinkedinIcon  size ={33} round/>
-                                        </LinkedinShareButton>
                                 </Card.Footer>
                             </Card>
                         )
