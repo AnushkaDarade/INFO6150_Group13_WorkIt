@@ -17,7 +17,7 @@ class Blog extends Component{
             rowLength:3,
             heading:'',
             content:'',
-            postTag:'Feelings',
+            postTag:'All',
             tagsList:['All','Productivity','Self-care','Lifestyle','Grooming'],
             selectedTag:'none',
             userName: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
@@ -139,13 +139,7 @@ class Blog extends Component{
                     <Col xs={12} md={8} className="user-blogs">
                         <BlogByUser userName={this.state.userName}/>
                     </Col>
-                    <Col xs={12} md={3}>
-                        <div className='ads-ads'>
-                            <Advertisements />
-                            <Advertisements />
-                            <Advertisements />
-                        </div>
-                    </Col>
+                    
 
                 </Row>
                 

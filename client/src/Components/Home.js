@@ -17,8 +17,8 @@ class Home extends Component{
             blogs: [],
             showBlogs: [],
             reload:1,
-            tagsList:['Confused','Happy','Sad','Grateful','Joyful','Emotional','Surprised', 'Peaceful','Irritated','Angry'],
-            selectedTag:'Confused',
+            tagsList:['All','Productivity','Self-care','Lifestyle','Grooming'],
+            selectedTag:'All',
             currentUser: localStorage.getItem("user") !== null && localStorage.getItem("user") !== undefined
                     ? JSON.parse(localStorage.getItem("user")).userName
                     : ''
