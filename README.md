@@ -19,13 +19,12 @@ Gist -  Website allows user to read quotes, write blogs and store notes for self
 
 Points covered - 
 1. Website is responsive (Desktop and mobile friendly)
-2. Number of roles added - (Admin and user)
-3. Login/Registration form - Password validation and encryption enabled
-4. Number of pages - 9
-5. Session Management - Maintained session by local storage
-6. Support for external APIs - 
+2. Login/Registration form - Password validation and encryption enabled
+3. Number of pages - 9
+4. Session Management - Maintained session by local storage
+5. Support for external APIs - 
    1. https://api.quotable.io/random- for quotes list
-7. Project architecture is based on MVC. 
-8. CRUD operations are supported
-9. Data is stored and made consistent using MongoDB
+6. Project architecture is based on MVC. 
+7. CRUD operations are supported
+8. Data is stored and made consistent using MongoDB
 
