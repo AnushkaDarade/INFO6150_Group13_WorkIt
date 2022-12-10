@@ -16,8 +16,7 @@ Note.find().then(notes => {
      if(notes){
         res.status(200).json({
         message: "All Todos fetched successfully!",
-        title: notes.title,
-        content: notes.content,
+        todos: notes
 
      });
      } 
@@ -117,28 +116,30 @@ exports.DeleteTodo = (req, res) => {
 
 
 
-exports.getTodosByUser = (req, res) => {
-    User.findOne({ userName: req.query.userName })
-      .then((result) => {
-        res.json(result);
-      })
-      .catch((error) => {
-        res.status(500).json({ error });
-      });
-
-  };
-
-
-
+/*
   exports.getTodosByUser = (req, res) => {
-    User.findOne({ userName: req.query.userName })
-      .populate({path:"todos"})
+    console.log(User.findOne({ userName: req.body.userName}).populate("todos"));
+    User.findOne({ userName: req.body.userName}) /*req.query.userName
+      .populate("todos"
       .then((result) => {
+        console.log("Successfully got the todos")
         res.json(result);
       })
       .catch((error) => {
+        console.log("couldnt find user");
         res.status(500).json({ error });
       });
+*/
+
+
+exports.getTodosByUser = async (req, res) => {
+   await User.findOne({ userName: req.body.userName }).populate("todos")
+    .then((result) => {
+      res.json(result);
+    })
+    .catch((error) => {
+      res.status(500).json({ error });
+    });
   };
   
 

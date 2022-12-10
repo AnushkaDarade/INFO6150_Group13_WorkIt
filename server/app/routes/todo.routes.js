@@ -16,6 +16,7 @@ const {
   getAllTodos,
   CreateTodo,
   DeleteTodo,
+  getTodosByUser,
   //DeleteTodo,
   //UpdateTodo,
 } = require("../controllers/note.controller");
@@ -26,8 +27,9 @@ const { protect } = require("../middleware/authMiddleware.js");
   app.get("/api/todo/",getAllTodos);
 
   //app.get("/api/todo/:id",getTodosById);
-  app.put("/api/todo/createTodo",CreateTodo);
+  app.put("/api/todo/createTodo",[protect],CreateTodo);
   app.delete("/api/todo/delete/:id",DeleteTodo);
+  app.get("/api/todo/mytodo",getTodosByUser);
 
 
   };  

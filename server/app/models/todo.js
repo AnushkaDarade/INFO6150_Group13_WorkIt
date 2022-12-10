@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 
-const Note = new mongoose.model('Todo', {
+const Todo =  mongoose.model('Todo',
+    {
     title: {
         type: String,
         required: true
@@ -12,9 +13,6 @@ const Note = new mongoose.model('Todo', {
       required: true,
 
     },
-
-
-
     done: {
 
         type: Boolean,
@@ -30,4 +28,4 @@ const Note = new mongoose.model('Todo', {
 
 });
 
-module.exports = Note;
+module.exports = Todo;

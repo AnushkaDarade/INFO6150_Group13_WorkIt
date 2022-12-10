@@ -5,6 +5,8 @@ const cors = require("cors"); // provides express middleware
 //import cors from "cors";
 // const dbConfig = require("./app/config/db.config");
 const mongoose = require('mongoose');
+mongoose.set('strictQuery', false);
+
 
 const url = 'mongodb+srv://webd:webd@cluster0.28koesv.mongodb.net/?retryWrites=true&w=majority';
 const todoRoutes =  require('../server/app/routes/todo.routes');
@@ -52,7 +54,8 @@ const db = require("./app/models");
 //const Role = db.role;
 //mongodb+srv://root:<password>@cluster0.dtfvd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 // connects to mongodb port
-mongoose.connect(url,{ useNewUrlParser: true ,useFindAndModify: false, useCreateIndex: true, useUnifiedTopology: true});
+mongoose.connect(url,{ useNewUrlParser: true , useUnifiedTopology: true});
+
 
 const con = mongoose.connection;
 
