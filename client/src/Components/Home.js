@@ -5,7 +5,7 @@ import BlogWithTag from "./BlogWithTag";
 import BlogServices from '../services/blogs.services';
 import Loading from "./Loading";
 import './blogs.scss'
-import Advertisements from "./Advertisements";
+//import Advertisements from "./Advertisements";
 
 
 class Home extends Component{
@@ -88,9 +88,6 @@ class Home extends Component{
                     </Col>
                     <Col>
                     <div style={{marginTop:'20px'}}>
-                            <Advertisements />
-                            <Advertisements />
-                            <Advertisements />
                         </div>
                     </Col>
                 </Row>

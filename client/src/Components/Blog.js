@@ -6,7 +6,7 @@ import { HashRouter, Route } from "react-router-dom";
 import BlogByUser from "./BlogByUser";
 import BlogServices from '../services/blogs.services';
 import './blogsWrite.scss'
-import Advertisements from "./Advertisements";
+//import Advertisements from "./Advertisements";
 
 class Blog extends Component{
     
