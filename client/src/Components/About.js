@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import FoodGif from './Cusines/Food.gif';
 import video from './Travel/video.mp4';
 import "./About.css";
 export class About extends Component {
@@ -22,15 +21,15 @@ export class About extends Component {
             <div class="small-12 small-centered large-9 columns text-center">
               <h3><u>What are we?</u></h3>
               <h5 style={{margin:"40px"}}> <b>WORK IT</b> is a super friendly website that allows the user to write their thoughts
-              and post it. Work It allows user to create a To-Do List to manage the day throughout.
+              and post it. Work It allows user to comment on the blogs and share their thoughts. We provide the user to create notes and save it for further use.
                </h5>
             </div>
           </div>
           <div class="row">
             <div class="small-12 small-centered large-9 columns text-center">
               <h3><u>What we offer?</u></h3>
-              <h5 style={{margin:"40px"}}>To help you access some self motivating quotes, post and read the blogs. We offer To-Do List functionality that will be used by the 
-              user to plan the day and act accordingly. </h5>
+              <h5 style={{margin:"40px"}}>To help you access some self motivating quotes, post and read the blogs. We offer My Journal functionality that will be used by the 
+              user to store notes. </h5>
             </div>
           </div>
           
