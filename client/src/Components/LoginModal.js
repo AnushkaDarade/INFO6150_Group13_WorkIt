@@ -141,7 +141,7 @@ export default class LoginModal extends Component {
             </Form.Group>
 
             <div className="text-center">
-              <Button className="btn-md btn-primary btn-block " type="submit">
+              <Button className="btn-md btn-danger btn-block " type="submit">
                 Submit
               </Button>&nbsp;&nbsp;
             </div>
