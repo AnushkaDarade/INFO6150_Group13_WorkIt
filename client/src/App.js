@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Route, HashRouter} from 'react-router-dom';
 import Home from './Components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Travel from './Components/Travel/Travel';
 import Blog from './Components/Blog';
 import Todo from './Components/Todo';
 import LoginModal from './Components/LoginModal';
@@ -67,7 +66,6 @@ class App extends Component{
                 
 				<Route exact path ='/' component={RealHome}/>
 				<Route path ='/home' component={ RealHome} />
-				<Route path ='/travel' component={Travel} />
 				<Route path ='/quotes' component={Quotes} />
                 <Route path ='/about' component={About} />
                 <Route path ='/contact' component={Contact} />
