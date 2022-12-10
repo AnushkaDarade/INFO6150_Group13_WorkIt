@@ -53,7 +53,7 @@ class RealHome extends Component{
                           {/* <Card.Img className='card-img' variant="top" src="images/foodCard.png" /> */}
                           <Card.Body className='card-body'>
                             <Card.Title>Had a long day? Get your keypad and start noting the things down in your very own journal. Happy writing!</Card.Title>
-                            <Button className="btn-go-to" variant="primary" href="#myblogs">Go to My Journal</Button>
+                            <Button className="btn-go-to" variant="primary" href="#todo">Go to My Journal</Button>
                           </Card.Body>
                         </Card>
 
