@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
-<<<<<<< HEAD
+
 import video from './Aboutvideo/video.mp4';
-=======
-import video from './Travel/video.mp4';
->>>>>>> 435252825f4ab099ad210f8fe7adb29009b4e355
 import "./About.css";
 export class About extends Component {
   render() {
