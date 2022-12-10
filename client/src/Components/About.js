@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import FoodGif from './Cusines/Food.gif';
-import video from './Travel/video.mp4';
+import video from './Aboutvideo/video.mp4';
 import "./About.css";
 export class About extends Component {
   render() {
