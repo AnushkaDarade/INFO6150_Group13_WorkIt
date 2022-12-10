@@ -5,7 +5,7 @@ const apiurl = "http://localhost:8001/api/todo/";
 
 class TodoServices {
 
-  getAllTodos(){
+    getAllPosts(){
         return axios
         .get(apiurl 
         )

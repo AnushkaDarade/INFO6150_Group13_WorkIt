@@ -5,13 +5,16 @@ const Loading = () => {
     return (
         <div>
             <div class="about">
-   <a class="bg_links social portfolio" href="http://nirmayeedighe.com/" target="_blank">
+   <a class="bg_links social portfolio" href="https://www.linkedin.com/in/swethapaturu9/" target="_blank">
       <span class="icon"></span>
    </a>
-   <a class="bg_links social dribbble" href="https://www.linkedin.com/in/vaishnavikhismatrao/" target="_blank">
+   <a class="bg_links social dribbble" href="https://www.linkedin.com/in/PrarthanaNemade14/" target="_blank">
       <span class="icon"></span>
    </a>
-   <a class="bg_links social linkedin" href="https://www.linkedin.com/in/pratik-nakave/" target="_blank">
+   <a class="bg_links social dribbble" href="https://www.linkedin.com/in/AnushkaDarade/" target="_blank">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links social linkedin" href="https://www.linkedin.com/in/Viral-28/" target="_blank">
       <span class="icon"></span>
    </a>
    

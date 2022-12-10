@@ -24,11 +24,6 @@ class RealHome extends Component{
                       src="images/home1.jpg"
                       alt="Second slide"
                     />
-                    
-                    <Carousel.Caption>
-                      {/* <h3>Backpackers</h3>
-                      <p>Wandering with no destination!</p> */}
-                    </Carousel.Caption>
                   </Carousel.Item>
 
                 </Carousel>
