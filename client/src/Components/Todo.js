@@ -1,14 +1,13 @@
 import React, {Component} from "react";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
-import { Container, Row, Image, Carousel, Col, Form,Button, Dropdown } from "react-bootstrap";
+import { Container, Row, Col, Form,Button } from "react-bootstrap";
 import { HashRouter, Route } from "react-router-dom";
 import TodoByUser from "./TodoByUser";
 import TodoServices from '../services/todos.services';
-import './blogsWrite.scss'
-import Advertisements from "./Advertisements";
+import './blogsWrite.scss';
 
-class BlogA extends Component{
+class Todo extends Component{
     
     constructor(props){
         super(props)
@@ -26,16 +25,11 @@ class BlogA extends Component{
 
         const formSubmit = (e) =>{
             e.preventDefault()
-            var today = new Date();
-            var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            var yyyy = today.getFullYear();
-            today = mm + '/' + dd + '/' + yyyy;
+
 
             TodoServices.addTodo(
                 this.state.heading,
                 this.state.content,
-                today,
                 this.state.userName
                 ).then( ()=>{
                     window.location.reload();
@@ -48,7 +42,7 @@ class BlogA extends Component{
                 head:this.state.heading,
                 content:this.state.content, 
             }
-            this.props.writeBlog(todo)
+            this.props.writeTodo(todo)
             this.setState({rowLength:3,heading:'Title',content:'Write about your task',color:'grey'})
 
         }
@@ -123,4 +117,4 @@ class BlogA extends Component{
     }
 }
 
-export default BlogA;
+export default Todo;

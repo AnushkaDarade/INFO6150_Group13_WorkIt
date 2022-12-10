@@ -20,15 +20,10 @@ class  TodoByUser extends Component{
     componentDidMount(){
         TodoServices.getAllTodos(this.props.userName).then(
             (response) => {
-                console.log(response.posts)
-                var fullblogs = response.posts
-                for(const blog of fullblogs){
-                    blog.commentVisibility='none'
-                    blog.buttonText = 'See Comments'
-                    blog.currentComment=''
-                    blog.view='View More ↓'
-                }
-                this.setState({blogs: fullblogs, showBlogs: fullblogs})
+                console.log(response.todos)
+                var fulltodos = response.todos
+    
+                this.setState({blogs: fulltodos, showBlogs: fulltodos})
                 this.setState((currentState) => ({
                     showBlogs: currentState.blogs.filter((c) => c.userName === this.props.userName )
                 }))
@@ -45,7 +40,7 @@ class  TodoByUser extends Component{
         return(
             <div>
                 <h1 className="entries">
-                    Journal Entries
+                    Todo Entries
                 </h1>
                 {
                     this.state.loading === true

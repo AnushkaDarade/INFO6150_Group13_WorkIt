@@ -5,22 +5,10 @@ const apiurl = "http://localhost:8001/api/todo/";
 
 class TodoServices {
 
-    getAllPosts(){
+    getAllTodos(){
         return axios
         .get(apiurl 
         )
-        .then(response => { 
-          return response.data;
-        });
-    }
-
-    getPostWithTag(tags){
-      console.log(tags)
-        return axios
-        .get(apiurl + "tags", {
-          params:{ tags:tags},  
-          headers: authHeader() }
-          )
         .then(response => { 
           return response.data;
         });
@@ -49,27 +37,6 @@ class TodoServices {
         });
     }
 
-    addPostComment(id, userName, comment){
-        console.log("Post Comment called");
-        return axios
-        .put(apiurl + "comment", {
-            id,
-            userName,comment
-        })
-        .then(response => { 
-          return response.data;
-        });
-    }
-
-    getPostById(id){
-      return axios
-      .get(apiurl +"id",
-      {params:{ id:id} }
-      )
-      .then(response => { 
-        return response.data;
-      });
-  }
 
 }
 
