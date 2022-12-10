@@ -21,7 +21,7 @@ class RealHome extends Component{
                   <Carousel.Item>
                     <img
                       className="d-block  w-100 h-20"
-                      src="images/home1.jpg"
+                      src="images/c1.png"
                       alt="Second slide"
                     />
                   </Carousel.Item>
